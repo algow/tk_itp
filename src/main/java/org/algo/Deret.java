@@ -8,21 +8,17 @@ public class Deret {
         boolean ulang = true;
 
         while (ulang) {
-            System.out.println("Masukkan nama anda [1-25]: ");
-            String name = sc.nextLine();
+            String name, nim;
 
-            if(name.length() < 1 || name.length() > 25) {
-                System.out.println("Nama harus berjumlah 1-25 karakter!");
-                continue;
-            }
+            do {
+                System.out.println("Masukkan nama anda [1-25]: ");
+                name = sc.nextLine();
+            } while (name.length() < 1 || name.length() > 25);
 
-            System.out.println("Masukkan NIM anda [harus 10 karakter]: ");
-            String nim = sc.nextLine();
-
-            if(nim.length() != 10) {
-                System.out.println("NIM harus berjumlah 10 karakter!");
-                continue;
-            }
+            do {
+                System.out.println("Masukkan NIM anda [harus 10 karakter]: ");
+                nim = sc.nextLine();
+            } while (nim.length() != 10);
 
             System.out.println();
 
@@ -36,8 +32,12 @@ public class Deret {
 
             System.out.println();
 
-            System.out.println("Masukkan sembarang angka [5-20]: ");
-            int num = sc.nextInt();
+            int num;
+
+            do {
+                System.out.println("Masukkan sembarang angka [5-20]: ");
+                num = sc.nextInt();
+            } while (num < 5 || num > 20);
 
             System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
@@ -97,17 +97,15 @@ public class Deret {
     }
 
     private static void deretFibonacci(int n) {
-        int total = 1;
+        int total = 0;
         int n1 = 0, n2 = 1;
 
         System.out.println(n + " bilangan fibonacci:");
 
-        System.out.print(total + " ");
-
         for (int i = 0; i < n-1; i++) {
-            int fib = n1 + n2;
+            System.out.print(n1 + " ");
 
-            System.out.print(fib + " ");
+            int fib = n1 + n2;
 
             n1 = n2;
             n2 = fib;
