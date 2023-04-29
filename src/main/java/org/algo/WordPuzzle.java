@@ -10,10 +10,10 @@ public class WordPuzzle {
         while (ulang) {
 
             int promptAnswer = 10;
-
             int levels = 3;
-            String[] word = {"dettli", "secaen", "hkrneo"};
-            String[][] answer = {
+
+            String[] words = {"dettli", "secaen", "hkrneo"};
+            String[][] answers = {
                     {"die", "led", "lei", "let", "lid", "lie", "lit", "tie", "deli", "diet", "edit", "idle", "lied", "tide", "tied", "title", "tilt", "tilde", "tiled", "title", "tilted", "titled"},
                     {"can", "cane", "scan", "scene", "case", "cease", "ace", "sane", "encase", "acne"},
                     {"honk", "honker", "ore", "hen", "her", "one", "hero", "horn", "kern", "nor", "heron"}
@@ -36,7 +36,7 @@ public class WordPuzzle {
                 System.out.println();
                 System.out.println("Level " + currLvl);
                 System.out.println("========");
-                System.out.println(word[i]);
+                System.out.println(words[i]);
 
                 int currScore = 0;
 
@@ -48,7 +48,7 @@ public class WordPuzzle {
                         System.out.println(num + ") Your Answer: ");
                         userAnswer = sc.nextLine();
 
-                        if (contains(answer[i], userAnswer) == true) {
+                        if (contains(answers[i], userAnswer) == true) {
                             currScore += 10;
                             System.out.println("# Right. Score: " + currScore);
                         } else {
@@ -69,8 +69,8 @@ public class WordPuzzle {
 
                 System.out.println("Correct answers:");
 
-                for (int j = 0; j < answer[i].length; j++) {
-                    System.out.print(answer[i][j] + " ");
+                for (int j = 0; j < answers[i].length; j++) {
+                    System.out.print(answers[i][j] + " ");
                 }
 
                 System.out.println();
