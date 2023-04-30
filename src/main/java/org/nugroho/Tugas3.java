@@ -10,11 +10,11 @@ public class Tugas3 {
         };
 
 // s e c a e n
-        String[] key2 = {"scan", "case", "scene", "can", "case", "seen",
-                "sea", "see", "cease", "cane", "sec"
+        String[] key2 = {"scan", "case", "scene", "can", "case", "seen", "cease", "encase", "seance", "seneca",
+                "sea", "see", "cease", "cane", "sec", "ace", "acne", "ease", "cans", "cense"
         };
 // h k r n e o
-        String[] key3 = {"ore", "honk", "her", "hen", "roe", "honker",
+        String[] key3 = {"ore", "honk", "her", "hen", "roe", "honker", "horn", "nor", "rho",
                 "neo", "one", "hoe", "hone"
         };
         String repetisi;
