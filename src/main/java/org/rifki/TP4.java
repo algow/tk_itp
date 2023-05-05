@@ -32,12 +32,15 @@ public class TP4 {
                 bubbleSortAsc(randomAngka, 5);
                 break;
             case '3':
+                randomBil();
                 selectionSortAsc(randomAngka, 5);
                 break;
             case '4':
+                randomBil();
                 bubbleSortDesc(randomAngka, 5);
                 break;
             case '5':
+                randomBil();
                 selectionSortDesc(randomAngka, 5);
                 break;
             case '6':
